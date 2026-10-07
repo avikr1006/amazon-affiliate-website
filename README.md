@@ -1,123 +1,119 @@
-# Amazon Affiliate Website
+# KartGuru — The Ultimate Buying Guide
 
-A beautiful single-page website to showcase and sell Amazon products as an affiliate.
+A lightweight static Amazon affiliate/review website built with HTML, CSS and JavaScript.
 
-## 📁 Files Included
+## Important design rule
+This version preserves the existing KartGuru visual design, navigation, cards, review layout, spacing and responsive behavior. The product-system changes below are intended to improve maintainability and robustness without redesigning the site.
 
-- **index.html** - Main website page
-- **styles.css** - Beautiful styling and design
-- **script.js** - Product loading and interactions
-- **products.json** - Your product data (edit this to add products)
+## Categories
+- Mobiles: Smartphones, Budget Smartphones, Premium Smartphones, Mobile Accessories
+- Laptops: Gaming Laptops, Business Laptops, Student Laptops, Ultrabooks
+- Monitors: Gaming Monitors, 4K Monitors, Office Monitors, Ultrawide Monitors
+- TVs: LED TVs, QLED TVs, OLED TVs, 4K TVs
+- Home Appliances: Air Conditioners, Refrigerators, Washing Machines, Air Purifiers, Microwaves
+- Books: Fiction, Non-Fiction, Education & Learning, Competitive Exams, Children's Books
+- Fashion: Men's Fashion, Women's Fashion, Kids' Fashion, Footwear, Watches & Accessories
+- Beauty: Skincare, Hair Care, Makeup, Fragrance, Beauty Tools
 
-## 🚀 How to Use
+## Product data
+Product data is maintained in `products.json`. Products are not hard-coded in `script.js`.
 
-### 1. Open the Website
-Simply double-click `index.html` to open it in your web browser.
+### Product ID architecture
+Each category has a reserved numeric ID range:
 
-### 2. Add Your Amazon Products
+| Category | ID range |
+|---|---:|
+| Mobiles | 101–199 |
+| Laptops | 201–299 |
+| Monitors | 301–399 |
+| TVs | 401–499 |
+| Home Appliances | 501–599 |
+| Books | 601–699 |
+| Fashion | 701–799 |
+| Beauty | 801–899 |
 
-Open `products.json` in any text editor (Notepad, VS Code, etc.) and add your products following this format:
+The ID rules are enforced by `script.js`:
+- `id` is mandatory.
+- `id` must be an integer.
+- Every product ID must be unique.
+- The ID must belong to the reserved range for its category.
+- Required product fields must be present.
 
-```
-json
+Sequential numbering is **not** required. For example, if product `102` is removed, `103` can still be used normally.
+
+### Adding a product
+Add the new object under the appropriate category section in `products.json`, leaving a blank line between product objects for readability.
+
+Example mobile:
+
+```json
 {
-  "id": 1,
-  "name": "Product Name",
-  "description": "Product description",
-  "price": "$99.99",
-  "image": "https://example.com/product-image.jpg",
-  "amazonLink": "https://www.amazon.com/dp/PRODUCT-ID?tag=YOUR-AFFILIATE-ID",
-  "category": "Electronics"
+  "id": 103,
+  "name": "Example Smartphone",
+  "description": "Example description",
+  "image": "images/example-smartphone.png",
+  "amazonLink": "YOUR_COMPLIANT_AMAZON_AFFILIATE_LINK",
+  "category": "Mobiles",
+  "subcategory": "Smartphones",
+  "specs": {},
+  "pros": [],
+  "cons": [],
+  "verdict": "Editorial verdict."
 }
 ```
 
-### ⚠️ Important: Set Up Your Amazon Affiliate ID
+Example laptop:
 
-1. Get your Amazon Affiliate tracking ID
-2. In `products.json`, replace `your-affiliate-id` in the `amazonLink` with your actual affiliate ID
-3. Do this for ALL products
-
-Example:
-```
-json
-"amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id"
-```
-Change to:
-```
-json
-"amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=harsh-20"
-```
-
-### 3. Add Product Images
-
-You have two options for product images:
-
-**Option A: Use external image URLs**
-Find product images on Amazon and use their image URLs in the `image` field.
-
-**Option B: Use placeholder images**
-The website includes a fallback placeholder image if the main image fails to load.
-
-### 4. Add New Products
-
-To add a new product, add a new object to the `products.json` array:
-
-```
-json
+```json
 {
-  "id": 7,
-  "name": "New Product Name",
-  "description": "Description here",
-  "price": "$49.99",
-  "image": "https://example.com/image.jpg",
-  "amazonLink": "https://www.amazon.com/dp/EXAMPLE?tag=your-affiliate-id",
-  "category": "Electronics"
+  "id": 201,
+  "name": "Example Laptop",
+  "description": "Example description",
+  "image": "images/example-laptop.png",
+  "amazonLink": "YOUR_COMPLIANT_AMAZON_AFFILIATE_LINK",
+  "category": "Laptops",
+  "subcategory": "Ultrabooks",
+  "specs": {},
+  "pros": [],
+  "cons": [],
+  "verdict": "Editorial verdict."
 }
 ```
 
-Make sure each product has a unique `id` number.
+### Why there are no `//` comments in products.json
+Standard JSON does not support comments. Adding `// Mobiles`, `// Laptops`, etc. would make the file invalid and prevent the browser from parsing it. Category grouping is therefore represented by ordering and blank lines, while the category-to-ID architecture is documented above and enforced in JavaScript.
 
-## 🎨 Customization
+## Image fallback
+Product images have a local fallback at:
 
-### Change Colors
-Open `styles.css` and find the `:root` section at the top. You can change:
-- `--primary-color` - Main accent color (Amazon orange)
-- `--secondary-color` - Dark background color
+`images/product-placeholder.svg`
 
-### Categories
-Categories are defined in both `products.json` and `index.html`. Make sure they match!
+The fallback is used in both places where product images are rendered:
+- Product cards
+- Individual product review pages
 
-## 📱 Features
+If a product image fails to load, KartGuru automatically shows the local placeholder instead of leaving a broken/empty image area.
 
-- ✅ Responsive design (works on mobile, tablet, desktop)
-- ✅ Category filtering
-- ✅ Beautiful product cards
-- ✅ Direct Amazon purchase links
-- ✅ Easy product management via JSON
+## Current products
+The two existing products are assigned to the Mobiles range:
+- `101` — boAt Nirvana Ion ANC
+- `102` — boAt Airdopes Prime 701 ANC
 
-## 🔒 Important Notes
+The Nirvana Ion ANC entry now points to `images/boat-nirvana-ion-anc.png`. Make sure the correctly named image file exists in the `images/` folder.
 
-1. **Affiliate Disclosure**: The footer includes an Amazon Associate disclosure
-2. **Image URLs**: Make sure to use direct image URLs from Amazon product pages
-3. **Local Testing**: For best results, run this on a local web server (see below)
+## Run locally
+No npm is required.
 
-## 🖥️ Running on a Local Server (Recommended)
+Use VS Code Live Server, or:
 
-For the products to load correctly, it's best to use a local server:
+```bash
+python -m http.server 5500
+```
 
-### Using Python (already installed on most systems):
-1. Open Command Prompt in the project folder
-2. Run: `python -m http.server 8000`
-3. Open: `http://localhost:8000`
+Then open `http://localhost:5500`.
 
-### Using VS Code:
-1. Install "Live Server" extension
-2. Right-click `index.html` and select "Open with Live Server"
+## GitHub Pages
+Push the files to the repository and enable GitHub Pages from the repository's Settings → Pages.
 
-## 📞 Support
-
-If you have questions or need help, feel free to reach out!
-
----
-
-Created for Amazon Affiliates 💼
+## Affiliate compliance
+Keep the Amazon Associate disclosure visible and use only compliant Amazon Associates links/content. Verify current Amazon Associates policies before publishing or adding price/availability claims.

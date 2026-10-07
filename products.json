@@ -1,56 +1,180 @@
 [
   {
-    "id": 1,
-    "name": "Wireless Bluetooth Headphones",
-    "description": "High-quality wireless headphones with noise cancellation",
-    "price": "$79.99",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Electronics"
+    "id": 181,
+    "slug": "realme-buds-t310",
+    "name": "realme Buds T310 True Wireless Earbuds",
+    "shortDescription": "True wireless earbuds with 46dB Hybrid ANC, 360° Spatial Audio, 12.4mm Dynamic Bass Driver, up to 40 hours of battery life and Bluetooth 5.4.",
+    "description": "The realme Buds T310 is a feature-rich true wireless earbud option with 46dB Hybrid Active Noise Cancellation, 360° Spatial Audio and a 12.4mm Dynamic Bass Driver. It offers up to 40 hours of total playback with the charging case, fast charging, 45ms ultra-low latency, IP55 water and dust resistance, Bluetooth 5.4 and dual-device connectivity. It is a strong choice for everyday music, calls, gaming and users looking for ANC and immersive audio at an affordable price.",
+    "image": "images/realme-buds-t310-tws.jpg",
+    "amazonLink": "https://link.amazon/B0hWSlKj7",
+    "category": "Mobiles",
+    "subcategory": "Mobile Accessories",
+    "tags": [
+      "TWS",
+      "True Wireless Earbuds",
+      "Wireless Earbuds",
+      "realme",
+      "realme Buds T310",
+      "ANC Earbuds",
+      "Hybrid ANC",
+      "Spatial Audio",
+      "Bluetooth 5.4",
+      "Gaming Earbuds",
+      "Bass Earbuds"
+    ],
+    "rating": null,
+    "price": null,
+    "specs": {
+      "Noise Cancellation": "46dB Hybrid Active Noise Cancellation",
+      "Audio Driver": "12.4mm Dynamic Bass Driver",
+      "Spatial Audio": "360° Spatial Audio Effect",
+      "Battery": "Up to 40 hours total playback",
+      "Fast Charging": "10 minutes charge = up to 5 hours playback",
+      "Latency": "45ms Ultra-Low Latency",
+      "Bluetooth": "Bluetooth 5.4",
+      "Connectivity": "Dual Device Connectivity",
+      "Water & Dust Resistance": "IP55",
+      "Type": "True Wireless Stereo (TWS)",
+      "Controls": "Touch Control",
+      "Bluetooth Range": "Up to 10 metres",
+      "Weight": "Approx. 45g"
+    },
+    "pros": [
+      "Strong 46dB Hybrid ANC for the price",
+      "12.4mm Dynamic Bass Driver",
+      "360° Spatial Audio support",
+      "Up to 40 hours total battery playback",
+      "Fast charging support",
+      "45ms ultra-low latency gaming mode",
+      "Bluetooth 5.4 connectivity",
+      "Dual-device connectivity",
+      "IP55 water and dust resistance"
+    ],
+    "cons": [
+      "Sound profile may not suit users who prefer a highly balanced or neutral sound",
+      "Battery life varies depending on ANC, volume and usage",
+      "Some advanced audio features may depend on the connected device and software"
+    ],
+    "verdict": "The realme Buds T310 is a compelling value-for-money TWS option for users who want Hybrid ANC, strong bass, spatial audio, long battery life and low-latency gaming features without spending on premium earbuds. It is especially worth considering for everyday music, calls and entertainment. Check Amazon for the latest price, offers, colour variant and availability.",
+    "featured": true
   },
+
   {
-    "id": 2,
-    "name": "Smart Fitness Watch",
-    "description": "Track your health and fitness goals with this sleek smartwatch",
-    "price": "$149.99",
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Electronics"
+  "id": 182,
+  "slug": "oneplus-nord-buds-4",
+  "name": "OnePlus Nord Buds 4 True Wireless Earbuds",
+  "shortDescription": "True wireless earbuds with 52dB real-time ANC, 12mm titanium-coated drivers, 3D Spatial Audio, up to 54 hours of battery life and 6-mic AI Clear Call.",
+  "description": "The OnePlus Nord Buds 4 is a feature-packed true wireless earbud designed for immersive audio, clear calls and long-lasting everyday use. It features up to 52dB real-time Active Noise Cancellation, 12mm titanium-coated dynamic drivers, 3D Spatial Audio, Game Sound Spatial Audio and six-mic AI Clear Call technology. The earbuds offer up to 54 hours of total playback with the charging case, fast charging, Bluetooth 6.1, dual-device connectivity and an ergonomic 4.3g lightweight design. With its combination of powerful bass, ANC, spatial audio and gaming features, it is a strong option for users looking for feature-rich TWS earbuds at a competitive price.",
+  "image": "images/oneplus-nord-buds-4-tws.jpg",
+  "amazonLink": "https://link.amazon/B0cmhOsaV",
+  "category": "Mobiles",
+  "subcategory": "Mobile Accessories",
+  "tags": [
+    "TWS",
+    "True Wireless Earbuds",
+    "Wireless Earbuds",
+    "OnePlus",
+    "OnePlus Nord Buds 4",
+    "ANC Earbuds",
+    "Active Noise Cancellation",
+    "Spatial Audio",
+    "Gaming Earbuds",
+    "Bluetooth 6.1",
+    "AI Call Noise Cancellation"
+  ],
+  "rating": null,
+  "price": null,
+  "specs": {
+    "Noise Cancellation": "Up to 52dB Real-Time Active Noise Cancellation",
+    "Noise Cancellation Range": "Up to 5000Hz",
+    "Audio Driver": "12mm Titanium-Coated Dynamic Driver",
+    "Spatial Audio": "3D Spatial Audio and Game Sound Spatial Audio",
+    "Battery": "Up to 54 hours with charging case, ANC off",
+    "Earbuds Battery": "Up to 13 hours, ANC off",
+    "Fast Charging": "10 minutes charge for up to 11 hours playback",
+    "Latency": "47ms Low Latency",
+    "Bluetooth": "Bluetooth 6.1",
+    "Connectivity": "Dual-Device Connection",
+    "Call Noise Cancellation": "6-mic AI Clear Call",
+    "Water & Dust Resistance": "IP55",
+    "Earbud Weight": "4.3g per earbud",
+    "Controls": "Touch Controls",
+    "Audio Features": "Boosted Bass and Spatial Audio"
   },
-  {
-    "id": 3,
-    "name": "Premium Coffee Maker",
-    "description": "Brew the perfect cup of coffee every morning",
-    "price": "$89.99",
-    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Home & Kitchen"
-  },
-  {
-    "id": 4,
-    "name": "Running Shoes",
-    "description": "Comfortable and durable shoes for daily running",
-    "price": "$119.99",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Sports"
-  },
-  {
-    "id": 5,
-    "name": "Portable Power Bank",
-    "description": "20000mAh fast charging power bank for all devices",
-    "price": "$39.99",
-    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Electronics"
-  },
-  {
-    "id": 6,
-    "name": "Yoga Mat Premium",
-    "description": "Non-slip exercise mat for yoga and fitness",
-    "price": "$29.99",
-    "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400",
-    "amazonLink": "https://www.amazon.com/dp/B09V3KXJPB?tag=your-affiliate-id",
-    "category": "Sports"
+  "pros": [
+    "Up to 52dB real-time Active Noise Cancellation",
+    "12mm titanium-coated dynamic drivers",
+    "3D Spatial Audio and Game Sound Spatial Audio",
+    "Up to 54 hours of total battery life",
+    "Fast charging with up to 11 hours playback from a 10-minute charge",
+    "6-mic AI Clear Call for clearer voice calls",
+    "47ms low-latency gaming support",
+    "Bluetooth 6.1 connectivity",
+    "Dual-device connectivity",
+    "Lightweight 4.3g earbuds with ergonomic design",
+    "IP55 water and dust resistance"
+  ],
+  "cons": [
+    "Actual ANC performance can vary depending on ear shape, fit, ear tips and surrounding noise",
+    "Battery life varies with volume, ANC, codec and usage conditions",
+    "Some advanced spatial audio and AI features have device or software compatibility requirements"
+  ],
+  "verdict": "The OnePlus Nord Buds 4 is a strong value-oriented TWS option for users who want powerful bass, effective active noise cancellation, spatial audio, long battery life and gaming-focused features. Its 52dB real-time ANC, 12mm titanium-coated drivers, six-mic AI call noise cancellation and 54-hour rated battery life make it particularly appealing for everyday music, calls, entertainment and gaming. Check Amazon for the latest price, offers, colour variant and availability.",
+  "featured": true
+},
+
+
+ {
+    "id": 501,
+    "slug": "lg-t80vbmb4z",
+    "name": "LG 8 Kg 5 Star Smart Inverter Fully Automatic Top Load Washing Machine",
+    "shortDescription": "8 Kg 5 Star top load washing machine with Smart Inverter Motor, TurboDrum and Smart Diagnosis.",
+    "description": "The LG T80VBMB4Z is an 8 Kg fully automatic top load washing machine with a 5 Star energy rating, Smart Inverter Motor, TurboDrum technology and Smart Diagnosis. It features a Middle Black finish, tempered glass lid, LED display with hard buttons, Punch+3 pulsator, Side Waterfall circulation, Auto Restart, Aqua Reserve, Child Lock, Extra Rinse, Quick Wash and Tub Clean. It is designed for everyday family laundry with multiple wash programs and automatic/manual water-level selection.",
+    "image": "images/lg-t80vbmb4z.png",
+    "amazonLink": "https://link.amazon/B0hWo8Ykl",
+    "category": "Home Appliances",
+    "subcategory": "Washing Machines",
+    "tags": [
+      "Washing Machine",
+      "LG",
+      "8 Kg",
+      "Top Load",
+      "5 Star",
+      "Smart Inverter"
+    ],
+    "rating": null,
+    "price": null,
+    "specs": {
+      "Capacity": "8 Kg",
+      "Type": "Fully Automatic Top Load Washer",
+      "Energy Rating": "5 Star",
+      "Motor": "Smart Inverter Motor",
+      "Wash Technology": "TurboDrum",
+      "Drum": "Semi Stainless Steel Drum",
+      "Display": "LED + Hard Buttons",
+      "Lid": "Tempered Glass with Soft Closing",
+      "Smart Feature": "Smart Diagnosis",
+      "Dimensions": "540 x 925 x 560 mm",
+      "Weight": "31 Kg",
+      "Colour": "Middle Black",
+      "Water Level": "Auto/Manual, 5 Levels"
+    },
+    "pros": [
+      "5 Star energy rating",
+      "Smart Inverter Motor",
+      "TurboDrum washing technology",
+      "8 Kg capacity suitable for family laundry",
+      "Smart Diagnosis support",
+      "Multiple useful wash programs and options"
+    ],
+    "cons": [
+      "No Wi-Fi or ThinQ connectivity",
+      "No built-in heater",
+      "Top-load design requires sufficient overhead space for the lid"
+    ],
+    "verdict": "A practical 8 Kg top-load option for families looking for a 5 Star washing machine with Smart Inverter Motor, TurboDrum and useful everyday wash features. Check Amazon for the latest price, offers and availability.",
+    "featured": true
   }
+  
+
 ]

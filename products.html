@@ -1,86 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - MGM Deals</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"><h1>🛒 MGM Deals</h1></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Products | KartGuru</title><meta name="description" content="Browse KartGuru product recommendations, reviews and buying guides across every category."><meta name="robots" content="index,follow">
+<link rel="canonical" href="products.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body data-page="products"><header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+<a class="brand" href="index.html"><img src="logo.svg" alt="KartGuru"></a>
 
-    <!-- Products Hero -->
-    <section class="page-hero">
-        <div class="hero-content">
-            <h2>All Products</h2>
-            <p>Browse our complete collection of curated products</p>
-        </div>
-    </section>
+<div class="nav-main">
+  <a href="index.html">Home</a>
 
-    <!-- Products Section -->
-    <section class="page-content">
-        <div class="container">
-            <!-- Category Filter -->
-            <div class="category-filter">
-                <button class="filter-btn active" data-category="all">All Products</button>
-                <button class="filter-btn" data-category="Electronics">Electronics</button>
-                <button class="filter-btn" data-category="Home & Kitchen">Home & Kitchen</button>
-                <button class="filter-btn" data-category="Sports">Sports</button>
-                <button class="filter-btn" data-category="Fashion">Fashion</button>
-            </div>
+  <div class="nav-drop nav-categories">
+    <button type="button" class="categories-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="categories-panel">
+      <span>Categories</span><span class="nav-chevron" aria-hidden="true"></span>
+    </button>
 
-            <!-- Products Grid -->
-            <div id="products-grid" class="products-grid">
-                <!-- Products will be loaded here dynamically -->
-            </div>
-        </div>
-    </section>
+    <div id="categories-panel" class="dropdown categories-mega" hidden>
+      <div class="mega-intro">
+        <span class="mega-kicker">Explore KartGuru</span>
+        <strong>Shop by category</strong>
+        <span>Find the right products faster.</span>
+      </div>
+      <div class="mega-grid">
+        <div class="mega-column"><a class="mega-title" href="mobiles.html">📱 Mobiles</a><a href="products.html?category=Mobiles&subcategory=Smartphones">Smartphones</a><a href="products.html?category=Mobiles&subcategory=Budget%20Smartphones">Budget Smartphones</a><a href="products.html?category=Mobiles&subcategory=Premium%20Smartphones">Premium Smartphones</a><a href="products.html?category=Mobiles&subcategory=Mobile%20Accessories">Mobile Accessories</a></div>
+        <div class="mega-column"><a class="mega-title" href="laptops.html">💻 Laptops</a><a href="products.html?category=Laptops&subcategory=Gaming%20Laptops">Gaming Laptops</a><a href="products.html?category=Laptops&subcategory=Business%20Laptops">Business Laptops</a><a href="products.html?category=Laptops&subcategory=Student%20Laptops">Student Laptops</a><a href="products.html?category=Laptops&subcategory=Ultrabooks">Ultrabooks</a></div>
+        <div class="mega-column"><a class="mega-title" href="monitors.html">🖥️ Monitors</a><a href="products.html?category=Monitors&subcategory=Gaming%20Monitors">Gaming Monitors</a><a href="products.html?category=Monitors&subcategory=4K%20Monitors">4K Monitors</a><a href="products.html?category=Monitors&subcategory=Office%20Monitors">Office Monitors</a><a href="products.html?category=Monitors&subcategory=Ultrawide%20Monitors">Ultrawide Monitors</a></div>
+        <div class="mega-column"><a class="mega-title" href="tvs.html">📺 TVs</a><a href="products.html?category=TVs&subcategory=LED%20TVs">LED TVs</a><a href="products.html?category=TVs&subcategory=QLED%20TVs">QLED TVs</a><a href="products.html?category=TVs&subcategory=OLED%20TVs">OLED TVs</a><a href="products.html?category=TVs&subcategory=4K%20TVs">4K TVs</a></div>
+        <div class="mega-column"><a class="mega-title" href="home-appliances.html">🏠 Home Appliances</a><a href="products.html?category=Home%20Appliances&subcategory=Air%20Conditioners">Air Conditioners</a><a href="products.html?category=Home%20Appliances&subcategory=Refrigerators">Refrigerators</a><a href="products.html?category=Home%20Appliances&subcategory=Washing%20Machines">Washing Machines</a><a href="products.html?category=Home%20Appliances&subcategory=Air%20Purifiers">Air Purifiers</a><a href="products.html?category=Home%20Appliances&subcategory=Microwaves">Microwaves</a></div>
+        <div class="mega-column"><a class="mega-title" href="books.html">📚 Books</a><a href="products.html?category=Books&subcategory=Fiction">Fiction</a><a href="products.html?category=Books&subcategory=Non-Fiction">Non-Fiction</a><a href="products.html?category=Books&subcategory=Education%20%26%20Learning">Education &amp; Learning</a><a href="products.html?category=Books&subcategory=Competitive%20Exams">Competitive Exams</a><a href="products.html?category=Books&subcategory=Children%27s%20Books">Children's Books</a></div>
+        <div class="mega-column"><a class="mega-title" href="fashion.html">👕 Fashion</a><a href="products.html?category=Fashion&subcategory=Men%27s%20Fashion">Men's Fashion</a><a href="products.html?category=Fashion&subcategory=Women%27s%20Fashion">Women's Fashion</a><a href="products.html?category=Fashion&subcategory=Kids%27%20Fashion">Kids' Fashion</a><a href="products.html?category=Fashion&subcategory=Footwear">Footwear</a><a href="products.html?category=Fashion&subcategory=Watches%20%26%20Accessories">Watches &amp; Accessories</a></div>
+        <div class="mega-column"><a class="mega-title" href="beauty.html">✨ Beauty</a><a href="products.html?category=Beauty&subcategory=Skincare">Skincare</a><a href="products.html?category=Beauty&subcategory=Hair%20Care">Hair Care</a><a href="products.html?category=Beauty&subcategory=Makeup">Makeup</a><a href="products.html?category=Beauty&subcategory=Fragrance">Fragrance</a><a href="products.html?category=Beauty&subcategory=Beauty%20Tools">Beauty Tools</a></div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 MGM Deals. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="index.html">Home</a> | 
-                <a href="products.html">Products</a> | 
-                <a href="about.html">About</a> | 
-                <a href="contact.html">Contact</a> | 
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
-            <p class="disclaimer">As an Amazon Associate, we earn from qualifying purchases.</p>
-        </div>
-    </footer>
+  <a href="products.html">All Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-    <script src="script.js"></script>
-    <script>
-        // Initialize category filter for this page
-        document.addEventListener('DOMContentLoaded', () => {
-            displayProducts(products);
-            initCategoryFilter();
-            initMobileMenu();
-        });
-    </script>
-</body>
-</html>
+<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+</nav></header><section class="page-hero"><div class="container"><h1 id="listing-title">All Products</h1><p>Search, filter and open a detailed buying guide before you shop.</p></div></section><section class="section"><div class="container"><div class="toolbar"><div class="search"><span>⌕</span><input id="product-search" type="search" placeholder="Search products, brands or features…" aria-label="Search products"></div><div id="subfilters" class="filters"></div></div><div id="products-grid" class="product-grid"></div></div></section><footer class="site-footer"><div class="container footer-grid">
+<div class="footer-brand"><img src="logo.svg" alt="KartGuru"><p>The Ultimate Buying Guide for smarter product decisions in India.</p></div>
+<div><h3>Categories</h3><a href="mobiles.html">Mobiles</a><a href="laptops.html">Laptops</a><a href="monitors.html">Monitors</a><a href="tvs.html">TVs</a><a href="home-appliances.html">Home Appliances</a><a href="books.html">Books</a><a href="fashion.html">Fashion</a><a href="beauty.html">Beauty</a></div>
+<div><h3>Explore</h3><a href="products.html">All Products</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+<div><h3>Legal</h3><a href="privacy-policy.html">Privacy Policy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div>
+</div><div class="container footer-bottom"><span>© <span data-year></span> KartGuru. All rights reserved.</span><span>As an Amazon Associate I earn from qualifying purchases.</span></div></footer><script src="script.js"></script></body></html>

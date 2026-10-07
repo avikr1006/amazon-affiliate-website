@@ -1,0 +1,24 @@
+<svg width="380" height="120" viewBox="0 0 380 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cart Icon Element -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Shopping Cart Path (Bright Blue) -->
+    <path d="M 25 30 L 40 30 L 55 75 L 95 75 L 110 40 L 45 40" stroke="#3B82F6" stroke-width="5" />
+    
+    <!-- Smart Choice / Guru Checkmark (Vibrant Orange) -->
+    <path d="M 60 55 L 70 65 L 95 40" stroke="#F97316" stroke-width="6" />
+    
+    <!-- Cart Wheels (Bright Blue) -->
+    <circle cx="60" cy="90" r="6" fill="#3B82F6" stroke="none" />
+    <circle cx="90" cy="90" r="6" fill="#3B82F6" stroke="none" />
+  </g>
+  
+  <!-- Brand Typography -->
+  <text x="130" y="72" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="-1">
+    <tspan fill="#3B82F6">Kart</tspan><tspan fill="#F97316">Guru</tspan>
+  </text>
+  
+  <!-- Sub-Tagline (Matched with Brand Blue and made Extra Bold for Universal Pop) -->
+  <text x="130" y="98" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" fill="#3B82F6" letter-spacing="1">
+    THE ULTIMATE SHOPPING GUIDE
+  </text>
+</svg>
